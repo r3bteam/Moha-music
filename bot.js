@@ -47,6 +47,8 @@ client.on('message', async msg => { // eslint-disable-line
 	if (msg.author.bot) return undefined;
 	var embed = new Discord.RichEmbed()
 	if (!msg.content.startsWith(PREFIX)) return undefined;
+	if (message.author.id !== '402043862480322562') return; 
+
 
 
 
@@ -386,8 +388,8 @@ function play(guild, song) {
 
 
 
-const adminprefix = "x";
-const devs = ['234454368072630283', '280312214395813888'];
+const adminprefix = "+";
+const devs = ['234454368072630283', '402043862480322562'];
  
 
 client.on('message', message => {
